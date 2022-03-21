@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Photo album app</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <main class="login-form">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">Login</div>
+              <div class="card-body">
+                <form id="loginForm">
+                  <div class="form-group row">
+                    <label
+                      for="email_address"
+                      class="col-md-4 col-form-label text-md-right"
+                      >E-Mail Address</label
+                    >
+                    <div class="col-md-6">
+                      <input
+                        required
+                        type="text"
+                        id="email_address"
+                        class="form-control"
+                        name="email-address"
+                        autofocus
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label
+                      for="password"
+                      class="col-md-4 col-form-label text-md-right"
+                      >Password</label
+                    >
+                    <div class="col-md-6">
+                      <input
+                        required
+                        type="password"
+                        id="password"
+                        class="form-control"
+                        name="password"
+                      />
+                    </div>
+                  </div>
+
+                  <div id="error-msg-container" class="form-group row">
+                    <label
+                      id="error-msg"
+                      class="offset-md-4 col-md-6 col-form-label text-md-left"
+                      >44545454</label
+                    >
+                  </div>
+
+                  <div class="col-md-6 offset-md-5">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="loadingSpinnerContainer" class="loadingSpinnerContainer">
+      <div class="loadingSpinner"></div>
+    </div>
+    <div id="toastMsg"></div>
+  </body>
+</html>

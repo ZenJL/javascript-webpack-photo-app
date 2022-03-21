@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Photo album app</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container mt-5 mb-3">
+        <!-- wrap all section -->
+        <div class="row justify-content-between align-items-center flex-column">
+          <div class="row align-items-center justify-content-end mb-4">
+            <div
+              id="userWrapper"
+              class="d-flex col-6 col-md-2 align-items-center userWrapper"
+            ></div>
+
+            <button
+              id="logoutBtn"
+              type="button"
+              class="btn btn-outline-danger btn-sm py-2 col-3 col-smm-3 col-md-2 col-lg-1"
+            >
+              Log out
+            </button>
+          </div>
+
+          <!-- header -->
+          <div class="row justify-content-center align-items-center mb-4">
+            <h1 class="col-md-8 text-center fs-1">Photo Album App</h1>
+            <p class="col-md-7 text-center text-wrap fs-5 fw-light">
+              Something short and leading about the collection below—its
+              contents, the creator, etc. Make it short and sweet, but not too
+              short so folks don`t simply skip over it entirely.
+            </p>
+          </div>
+
+          <!-- add btn -->
+          <div class="row align-items-center justify-content-end mb-4">
+            <button
+              id="addPhotoBtn"
+              type="button"
+              class="btn btn-primary col-md-1 btn-sm py-2"
+            >
+              Add Photo
+            </button>
+          </div>
+
+          <!-- display photo -->
+          <div
+            id="card-container"
+            class="row mb-4 d-flex flex-wrap card-container p-0"
+          ></div>
+
+          <!-- pagination -->
+          <nav class="paginationContainer mb-3">
+            <ul class="pagination justify-content-end">
+              <li id="page-previous" class="page-item page-previous">
+                <a class="page-link page-previous-link">Previous</a>
+              </li>
+              <div id="pagination" class="d-flex"></div>
+              <li id="page-next" class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="row align-items-center justify-content-end mb-4">
+            <button
+              id="backToTopBtn"
+              type="button"
+              class="btn btn-outline-info btn-lg col-md-2 py-2"
+            >
+              Back To Top
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="loadingSpinnerContainer" class="loadingSpinnerContainer">
+      <div class="loadingSpinner"></div>
+    </div>
+  </body>
+</html>
